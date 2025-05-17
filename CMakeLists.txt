@@ -259,6 +259,20 @@ endif()
 # Link with the library dependencies.
 target_link_libraries(EndlessSky PRIVATE ExternalLibraries EndlessSkyLib $<TARGET_NAME_IF_EXISTS:SDL2::SDL2main>)
 
+# Add shared library target
+add_library(EndlessSkyShared SHARED)
+target_compile_options(EndlessSkyShared PRIVATE -fPIC)
+target_link_libraries(EndlessSkyShared PRIVATE ExternalLibraries)
+
+# Copy all source files from EndlessSkyLib to EndlessSkyShared
+get_target_property(SOURCES EndlessSkyLib SOURCES)
+foreach(SOURCE ${SOURCES})
+    target_sources(EndlessSkyShared PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/source/${SOURCE})
+endforeach()
+target_include_directories(EndlessSkyShared PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/source)
+
+set_target_properties(EndlessSkyShared PROPERTIES OUTPUT_NAME "endless-sky-shared")
+
 # Copy the MinGW runtime DLLs if necessary.
 if(MINGW AND WIN32)
 	foreach(FILE_PATH ${MINGW_RUNTIME})
