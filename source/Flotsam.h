@@ -85,7 +85,6 @@ public:
 	static const int TONS_PER_BOX;
 
 
-private:
 	Angle spin;
 	int lifetime = 0;
 	double drag = 0.999;

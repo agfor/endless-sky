@@ -43,7 +43,6 @@ public:
 	const std::vector<const Ship *> &Click(const Point &point) const;
 
 
-private:
 	class Icon {
 	public:
 		Icon(const Ship &ship, bool isHere, bool systemNameKnown, bool fleetIsJumping, bool isSelected,
@@ -71,11 +70,9 @@ private:
 	};
 
 
-private:
 	void MergeStacks(int maxHeight) const;
 
 
-private:
 	mutable std::list<Icon> icons;
 	mutable std::vector<std::vector<const Ship *>> stacks;
 	mutable std::vector<Rectangle> zones;

@@ -52,14 +52,12 @@ public:
 	void Draw() const;
 
 
-private:
 	// Determine if the given object should be drawn at all.
 	bool Cull(const Body &body, const Point &position, const Point &blur) const;
 
 	void Push(const Body &body, Point pos, Point blur, double cloak, const Swizzle *swizzle);
 
 
-private:
 	int step = 0;
 	double zoom = 1.;
 	bool isHighDPI = false;

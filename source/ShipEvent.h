@@ -82,7 +82,6 @@ public:
 	int Type() const;
 
 
-private:
 	std::shared_ptr<Ship> actor;
 	const Government *actorGovernment = nullptr;
 	std::shared_ptr<Ship> target;

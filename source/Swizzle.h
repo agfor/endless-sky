@@ -42,11 +42,9 @@ public:
 	static const Swizzle *None();
 
 
-private:
 	explicit Swizzle(bool identity, bool loaded, bool overrideMask, std::array<float, 16> matrix);
 
 
-private:
 	static constexpr inline std::array<float, 16> IDENTITY_MATRIX = {
 		1, 0, 0, 0,
 		0, 1, 0, 0,

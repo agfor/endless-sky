@@ -30,7 +30,6 @@ public:
 		const std::string &forbidden = {});
 
 
-private:
 	// Replace the current contents with the provided string.
 	static void Set(const std::string &inputBuffer);
 	// Get the current clipboard contents, excluding characters we don't want.

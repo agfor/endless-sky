@@ -59,11 +59,9 @@ public:
 	void SetCurrentSort(ShipComparator *s);
 
 
-private:
 	bool ReorderShips(const std::set<int> &fromIndices, int toIndex);
 
 
-private:
 	PlayerInfo &player;
 
 	// Most recent selected ship index.

@@ -51,11 +51,9 @@ public:
 		const Point &operator*() const;
 		PositionIterator &operator++();
 
-	private:
 		void MoveToValidPositionOutsideCenterBody();
 		void MoveToValidPosition();
 
-	private:
 		// The pattern for which we are calculating positions.
 		const FormationPattern &pattern;
 
@@ -93,7 +91,6 @@ public:
 	bool FlippableY() const;
 	bool FlippableX() const;
 
-private:
 	// Retrieve properties like number of lines and arcs, number of repeat sections and number of positions.
 	// Private, because we hide those properties and just provide a position iterator instead.
 	unsigned int Lines() const;
@@ -106,7 +103,6 @@ private:
 	Point Position(unsigned int ring, unsigned int lineNr, unsigned int repeatNr,
 		unsigned int lineRepeatPosition) const;
 
-private:
 	class LineRepeat {
 	public:
 		// Vector to apply to get to the next start point for the next iteration.
@@ -141,7 +137,6 @@ private:
 	};
 
 
-private:
 	// Name of the formation pattern.
 	std::string name;
 	// Indicates if the formation is rotatable. A value of -1 means not

@@ -77,14 +77,12 @@ public:
 	void Draw(const Point &topLeft, const Color &color) const;
 
 
-private:
 	void SetText(const char *it, size_t length);
 	void Wrap();
 	void AdjustLine(size_t &lineBegin, int &lineWidth, bool isEnd);
 	int Space(char c) const;
 
 
-private:
 	// The returned text is a series of words and (x, y) positions:
 	class Word {
 	public:
@@ -93,7 +91,6 @@ private:
 		size_t Index() const;
 		Point Pos() const;
 
-	private:
 		size_t index = 0;
 		int x = 0;
 		int y = 0;
@@ -102,7 +99,6 @@ private:
 	};
 
 
-private:
 	const Font *font = nullptr;
 
 	int space = 0;

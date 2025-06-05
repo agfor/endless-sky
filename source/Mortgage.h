@@ -77,7 +77,6 @@ public:
 	double PrecisePayment() const;
 
 
-private:
 	// Note: once a mortgage is set up, only the principal and term will change.
 	std::string type;
 	int64_t principal = 0;

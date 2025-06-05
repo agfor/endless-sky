@@ -110,12 +110,10 @@ public:
 	void SetPhases(const Ship *ship);
 
 
-private:
 	void CheckLock(const Ship &target);
 	void CheckConfused(const Ship &target);
 
 
-private:
 	const Weapon *weapon = nullptr;
 
 	std::weak_ptr<Ship> targetShip;

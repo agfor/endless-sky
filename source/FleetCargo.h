@@ -32,7 +32,6 @@ public:
 	void SetCargo(Ship *ship) const;
 
 
-private:
 	// The number of different items this object can assign to ships.
 	int cargo = 3;
 	std::vector<std::string> commodities;

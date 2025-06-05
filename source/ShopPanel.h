@@ -48,7 +48,6 @@ public:
 	virtual void Draw() override;
 
 
-protected:
 	// BuyResult holds the result of an attempt to buy. It is implicitly
 	// created from a string or boolean in code. Any string indicates failure.
 	// True indicates success, of course, while false (without a string)
@@ -65,13 +64,11 @@ protected:
 		const std::string &Message() const noexcept { return message; }
 
 
-	private:
 		bool success = true;
 		std::string message;
 	};
 
 
-protected:
 	void DrawShip(const Ship &ship, const Point &center, bool isSelected);
 
 	void CheckForMissions(Mission::Location location);
@@ -113,7 +110,6 @@ protected:
 	void CheckSelection();
 
 
-protected:
 	class Zone : public ClickZone<const Ship *> {
 	public:
 		explicit Zone(Point center, Point size, const Ship *ship);
@@ -122,7 +118,6 @@ protected:
 		const Ship *GetShip() const;
 		const Outfit *GetOutfit() const;
 
-	private:
 		const Outfit *outfit = nullptr;
 	};
 
@@ -133,7 +128,6 @@ protected:
 	};
 
 
-protected:
 	static constexpr int SIDEBAR_PADDING = 5;
 	static constexpr int SIDEBAR_CONTENT = 250;
 	static constexpr int SIDEBAR_WIDTH = SIDEBAR_CONTENT + SIDEBAR_PADDING;
@@ -144,7 +138,6 @@ protected:
 	static constexpr int OUTFIT_SIZE = 183;
 
 
-protected:
 	PlayerInfo &player;
 	// Remember the current day, for calculating depreciation.
 	int day;
@@ -190,7 +183,6 @@ protected:
 	OutfitInfoDisplay outfitInfo;
 
 
-private:
 	void DrawShipsSidebar();
 	void DrawDetailsSidebar();
 	void DrawButtons();
@@ -215,7 +207,6 @@ private:
 	char CheckButton(int x, int y);
 
 
-private:
 	bool delayedAutoScroll = false;
 
 	Point hoverPoint;

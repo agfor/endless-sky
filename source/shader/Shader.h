@@ -34,10 +34,8 @@ public:
 	GLint Uniform(const char *name) const;
 
 
-private:
 	GLuint Compile(const char *str, GLenum type);
 
 
-private:
 	GLuint program;
 };

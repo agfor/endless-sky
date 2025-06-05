@@ -94,11 +94,9 @@ public:
 	static Personality DefenderFighter();
 
 
-private:
 	void Parse(const DataNode &node, int index, bool remove);
 
 
-private:
 	// Make sure this matches the number of items in PersonalityTrait,
 	// or the build will fail.
 	static const int PERSONALITY_COUNT = 38;

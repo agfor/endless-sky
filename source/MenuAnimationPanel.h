@@ -29,6 +29,5 @@ public:
 	void Draw() final;
 
 
-private:
 	float alpha = 1.f;
 };

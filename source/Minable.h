@@ -94,7 +94,6 @@ public:
 	double MaxHull() const;
 
 
-private:
 	class LiveEffect {
 	public:
 		LiveEffect(const DataNode &node);
@@ -108,7 +107,6 @@ private:
 	};
 
 
-private:
 	std::string name;
 	std::string displayName;
 	std::string noun;

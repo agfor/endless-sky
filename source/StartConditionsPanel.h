@@ -41,7 +41,6 @@ public:
 	virtual void Draw() override final;
 
 
-protected:
 	// Only override the ones you need; the default action is to return false.
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress) override final;
 	virtual bool Click(int x, int y, int clicks) override final;
@@ -50,13 +49,11 @@ protected:
 	virtual bool Scroll(double dx, double dy) override final;
 
 
-private:
 	void OnConversationEnd(int);
 	void ScrollToSelected();
 	void Select(StartConditionsList::iterator it);
 
 
-private:
 	PlayerInfo &player;
 	UI &gamePanels;
 	// The panel to close when a scenario is chosen.

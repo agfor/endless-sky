@@ -50,7 +50,6 @@ public:
 	Engine &GetEngine();
 
 
-protected:
 	// Only override the ones you need; the default action is to return false.
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress) override;
 	virtual bool Click(int x, int y, int clicks) override;
@@ -60,14 +59,12 @@ protected:
 	virtual bool Scroll(double dx, double dy) override;
 
 
-private:
 	void ShowScanDialog(const ShipEvent &event);
 	bool ShowHailPanel();
 	bool ShowHelp(bool force);
 	void StepEvents(bool &isActive);
 
 
-private:
 	PlayerInfo &player;
 
 	Engine engine;

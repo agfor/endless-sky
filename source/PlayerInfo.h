@@ -344,7 +344,6 @@ public:
 	bool DisplayCarrierHelp() const;
 
 
-private:
 	// Apply any "changes" saved in this player info to the global game state.
 	void ApplyChanges();
 	// After loading & applying changes, make sure the player & ship locations are sensible.
@@ -381,7 +380,6 @@ private:
 	void DoAccounting();
 
 
-private:
 	std::string firstName;
 	std::string lastName;
 	std::string filePath;

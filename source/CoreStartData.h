@@ -50,12 +50,10 @@ public:
 	const std::string &Identifier() const noexcept;
 
 
-protected:
 	// Returns true if the child node was handled by this class.
 	bool LoadChild(const DataNode &child, bool isAdd);
 
 
-protected:
 	// The planet on which the game begins.
 	const Planet *planet = nullptr;
 	// The system in which the game begins.

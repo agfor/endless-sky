@@ -41,7 +41,6 @@ public:
 	void Draw() const;
 
 
-private:
 	// Determine if the given body should be drawn at all.
 	bool Cull(const Body &body, const Point &position) const;
 
@@ -49,7 +48,6 @@ private:
 	bool Add(const Body &body, Point position, float clip);
 
 
-private:
 	int step = 0;
 	double zoom = 1.;
 	bool isHighDPI = false;

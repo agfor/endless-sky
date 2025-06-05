@@ -91,14 +91,12 @@ public:
 	bool AllowsFastForward() const noexcept final;
 
 
-protected:
 	// The user can click "ok" or "cancel", or use the tab key to toggle which
 	// button is highlighted and the enter key to select it.
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress) override;
 	virtual bool Click(int x, int y, int clicks) override;
 
 
-private:
 	// Common code from all three constructors:
 	void Init(const std::string &message, Truncate truncate, bool canCancel = true, bool isMission = false);
 	void DoCallback(bool isOk = true) const;
@@ -106,7 +104,6 @@ private:
 	int Width() const;
 
 
-protected:
 	std::shared_ptr<TextArea> text;
 	// The number of extra segments in this dialog.
 	int extensionCount;

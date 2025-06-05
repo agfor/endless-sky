@@ -51,7 +51,6 @@ public:
 	int GetLongestLineWidth();
 
 
-protected:
 	virtual void Draw() override;
 	virtual bool Click(int x, int y, int clicks) override;
 	virtual bool Release(int x, int y) override;
@@ -63,7 +62,6 @@ protected:
 	void Validate(bool trailingBreak);
 
 
-private:
 	bool bufferIsValid = false;
 	bool textIsValid = false;
 	std::shared_ptr<RenderBuffer> buffer;

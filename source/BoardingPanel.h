@@ -41,7 +41,6 @@ public:
 	virtual void Draw() override;
 
 
-protected:
 	// Overrides from Panel.
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress) override;
 	virtual bool Click(int x, int y, int clicks) override;
@@ -49,7 +48,6 @@ protected:
 	virtual bool Scroll(double dx, double dy) override;
 
 
-private:
 	enum class CanTakeResult {
 		OTHER,
 		TARGET_YOURS,
@@ -91,11 +89,9 @@ private:
 		// Take some or all of this plunder item.
 		void Take(int count);
 
-	private:
 		void UpdateStrings();
 		double UnitMass() const;
 
-	private:
 		std::string name;
 		const Outfit *outfit;
 		int count;
@@ -105,7 +101,6 @@ private:
 	};
 
 
-private:
 	// You can't exit this dialog if you are in the middle of combat.
 	bool CanExit() const;
 	// Check if you can take the outfit at the given position in the list.
@@ -119,7 +114,6 @@ private:
 	void DoKeyboardNavigation(const SDL_Keycode key);
 
 
-private:
 	PlayerInfo &player;
 	std::shared_ptr<Ship> you;
 	std::shared_ptr<Ship> victim;

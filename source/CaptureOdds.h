@@ -49,7 +49,6 @@ public:
 	double DefenderPower(int defendingCrew) const;
 
 
-private:
 	// Generate the lookup table.
 	void Calculate();
 	// Map crew numbers into an index in the lookup table.
@@ -60,7 +59,6 @@ private:
 	static std::vector<double> Power(const Ship &ship, bool isDefender);
 
 
-private:
 	// Attacker and defender power lookup tables.
 	std::vector<double> powerA;
 	std::vector<double> powerD;

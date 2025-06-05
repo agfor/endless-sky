@@ -64,7 +64,6 @@ public:
 	void Upload(Sprite *sprite, bool enableUpload);
 
 
-private:
 	// Name of the sprite that will be initialized with these images.
 	std::string name;
 	// Paths to all the images that were discovered during loading.

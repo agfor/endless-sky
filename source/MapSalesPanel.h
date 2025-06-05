@@ -41,7 +41,6 @@ public:
 	virtual void Draw() override;
 
 
-protected:
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress) override;
 	virtual bool Click(int x, int y, int clicks) override;
 	virtual bool Hover(int x, int y) override;
@@ -78,13 +77,11 @@ protected:
 	void ClickCategory(const std::string &name);
 
 
-protected:
 	static const double ICON_HEIGHT;
 	static const double PAD;
 	static const int WIDTH;
 
 
-protected:
 	double scroll = 0.;
 	double maxScroll = 0.;
 
@@ -93,7 +90,6 @@ protected:
 	bool onlyShowStorageHere = false;
 
 
-private:
 	bool isDragging = false;
 	bool isOutfitters = false;
 

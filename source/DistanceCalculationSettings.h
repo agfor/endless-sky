@@ -34,7 +34,6 @@ public:
 	bool AssumesJumpDrive() const;
 
 
-private:
 	enum WormholeStrategy wormholeStrategy = WormholeStrategy::NONE;
 	bool assumesJumpDrive = false;
 };

@@ -124,7 +124,6 @@ public:
 	void Load(const DataNode &node, const ConditionsStore *playerConditions);
 
 
-private:
 	void LoadSequence(const DataNode &node, const ConditionsStore *playerConditions);
 
 	// Fail the test using the given message as reason.
@@ -132,7 +131,6 @@ private:
 	void UnexpectedSuccessResult() const;
 
 
-private:
 	std::string name;
 	Status status = Status::ACTIVE;
 	// Jump-table that specifies which labels map to which teststeps.

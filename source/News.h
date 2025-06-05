@@ -48,7 +48,6 @@ public:
 	std::string Message() const;
 
 
-private:
 	LocationFilter location;
 	ConditionSet toShow;
 

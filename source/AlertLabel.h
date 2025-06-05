@@ -32,7 +32,6 @@ public:
 	void Draw() const;
 
 
-private:
 	double rotation = 0.;
 	Point position;
 	double zoom = 1.;

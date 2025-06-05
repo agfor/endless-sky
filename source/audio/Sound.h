@@ -33,7 +33,6 @@ public:
 	bool IsLooping() const;
 
 
-private:
 	std::string name;
 	unsigned buffer = 0;
 	unsigned buffer3x = 0;

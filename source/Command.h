@@ -142,12 +142,10 @@ public:
 	Command &operator|=(const Command &command);
 
 
-private:
 	explicit Command(uint64_t state);
 	Command(uint64_t state, const std::string &text);
 
 
-private:
 	// The key commands are stored in a single bitmask with
 	// 64 bits for key commands.
 	uint64_t state = 0;

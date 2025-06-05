@@ -74,14 +74,12 @@ public:
 	std::string ToString() const noexcept(false);
 
 
-private:
 	// Internal constructor, from a string.
 	explicit EsUuid(const std::string &input);
 	// Lazy initialization getter.
 	const UuidType &Value() const;
 
 
-private:
 	mutable UuidType value;
 };
 

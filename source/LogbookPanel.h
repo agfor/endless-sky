@@ -38,7 +38,6 @@ public:
 	virtual void Draw() override;
 
 
-protected:
 	// Event handlers.
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress) override;
 	virtual bool Click(int x, int y, int clicks) override;
@@ -47,11 +46,9 @@ protected:
 	virtual bool Hover(int x, int y) override;
 
 
-private:
 	void Update(bool selectLast = true);
 
 
-private:
 	// Reference to the player, to apply any changes to them.
 	PlayerInfo &player;
 

@@ -112,12 +112,10 @@ public:
 	const Sprite *FlotsamSprite() const;
 
 
-private:
 	// Add the license with the given name to the licenses required by this outfit, if it is not already present.
 	void AddLicense(const std::string &name);
 
 
-private:
 	bool isDefined = false;
 	std::string trueName;
 	std::string displayName;

@@ -59,7 +59,6 @@ public:
 	static void ShowUnderlines(bool show) noexcept;
 
 
-private:
 	static int Glyph(char c, bool isAfterSpace) noexcept;
 	void LoadTexture(ImageBuffer &image);
 	void CalculateAdvances(ImageBuffer &image);
@@ -73,7 +72,6 @@ private:
 	std::string TruncateMiddle(const std::string &str, int &width) const;
 
 
-private:
 	const Shader *shader;
 	GLuint texture = 0;
 	GLuint vao = 0;

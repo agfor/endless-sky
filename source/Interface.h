@@ -59,7 +59,6 @@ public:
 	const std::vector<double> &GetList(const std::string &name) const;
 
 
-private:
 	class AnchoredPoint {
 	public:
 		// Get the point's location, given the current screen dimensions.
@@ -68,7 +67,6 @@ private:
 		Point Get(const Information &info) const;
 		void Set(const Point &position, const Point &anchor);
 
-	private:
 		Point position;
 		Point anchor;
 	};
@@ -103,7 +101,6 @@ private:
 		// Get the bounding rectangle, treating the Region within the Information as the screen area.
 		Rectangle Bounds(const Information &info) const;
 
-	protected:
 		// Parse the given data line: one that is not recognized by Element
 		// itself. This returns false if it does not recognize the line, either.
 		virtual bool ParseLine(const DataNode &node);
@@ -115,7 +112,6 @@ private:
 		// called if the element is visible and active.
 		virtual void Place(const Rectangle &bounds, Panel *panel) const;
 
-	protected:
 		AnchoredPoint from;
 		AnchoredPoint to;
 		Point alignment;
@@ -129,7 +125,6 @@ private:
 	public:
 		ImageElement(const DataNode &node, const Point &globalAnchor);
 
-	protected:
 		// Parse the given data line: one that is not recognized by Element
 		// itself. This returns false if it does not recognize the line, either.
 		virtual bool ParseLine(const DataNode &node) override;
@@ -138,10 +133,8 @@ private:
 		// Draw this element in the given rectangle.
 		virtual void Draw(const Rectangle &rect, const Information &info, int state) const override;
 
-	private:
 		const Sprite *GetSprite(const Information &info, int state) const;
 
-	private:
 		// If a name is given, look up the sprite with that name and draw it.
 		std::string name;
 		// Otherwise, draw a sprite. Which sprite is drawn depends on the current
@@ -158,7 +151,6 @@ private:
 	public:
 		TextElement(const DataNode &node, const Point &globalAnchor);
 
-	protected:
 		// Parse the given data line: one that is not recognized by Element
 		// itself. This returns false if it does not recognize the line, either.
 		virtual bool ParseLine(const DataNode &node) override;
@@ -171,7 +163,6 @@ private:
 		// Get text contents of this element.
 		std::string GetString(const Information &info) const;
 
-	protected:
 		// The string may either be a name of a dynamic string, or static text.
 		std::string str;
 		// Color for inactive, active, and hover states.
@@ -187,7 +178,6 @@ private:
 	public:
 		BasicTextElement(const DataNode &node, const Point &globalAnchor);
 
-	protected:
 		// Report the actual dimensions of the object that will be drawn.
 		virtual Point NativeDimensions(const Information &info, int state) const override;
 		// Draw this element in the given rectangle.
@@ -200,7 +190,6 @@ private:
 	public:
 		WrappedTextElement(const DataNode &node, const Point &globalAnchor);
 
-	protected:
 		// Parse the given data line: one that is not recognized by Element
 		// itself. This returns false if it does not recognize the line, either.
 		virtual bool ParseLine(const DataNode &node) override;
@@ -209,7 +198,6 @@ private:
 		// Draw this element in the given rectangle.
 		virtual void Draw(const Rectangle &rect, const Information &info, int state) const override;
 
-	private:
 		mutable WrappedText text;
 		Alignment textAlignment = Alignment::LEFT;
 	};
@@ -219,14 +207,12 @@ private:
 	public:
 		BarElement(const DataNode &node, const Point &globalAnchor);
 
-	protected:
 		// Parse the given data line: one that is not recognized by Element
 		// itself. This returns false if it does not recognize the line, either.
 		virtual bool ParseLine(const DataNode &node) override;
 		// Draw this element in the given rectangle.
 		virtual void Draw(const Rectangle &rect, const Information &info, int state) const override;
 
-	private:
 		std::string name;
 		const Color *fromColor = nullptr;
 		const Color *toColor = nullptr;
@@ -243,14 +229,12 @@ private:
 	public:
 		PointerElement(const DataNode &node, const Point &globalAnchor);
 
-	protected:
 		// Parse the given data line: one that is not recognized by Element
 		// itself. This returns false if it does not recognize the line, either.
 		virtual bool ParseLine(const DataNode &node) override;
 		// Draw this element in the given rectangle.
 		virtual void Draw(const Rectangle &rect, const Information &info, int state) const override;
 
-	private:
 		const Color *color = nullptr;
 		Point orientation;
 	};
@@ -261,19 +245,16 @@ private:
 	public:
 		LineElement(const DataNode &node, const Point &globalAnchor);
 
-	protected:
 		// Parse the given data line: one that is not recognized by Element
 		// itself. This returns false if it does not recognize the line, either.
 		virtual bool ParseLine(const DataNode &node) override;
 		// Draw this element in the given rectangle.
 		virtual void Draw(const Rectangle &rect, const Information &info, int state) const override;
 
-	private:
 		const Color *color = nullptr;
 	};
 
 
-private:
 	std::vector<Element *> elements;
 	std::map<std::string, Element> points;
 	std::map<std::string, double> values;

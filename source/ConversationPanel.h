@@ -56,7 +56,6 @@ template <class T>
 	virtual void Draw() override;
 
 
-protected:
 	// Event handlers.
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress) override;
 	virtual bool Drag(double dx, double dy) override;
@@ -64,7 +63,6 @@ protected:
 	virtual bool Hover(int x, int y) override;
 
 
-private:
 	// Go to the given conversation node. If a choice index is given, include
 	// the text of that choice in the conversation history.
 	void Goto(int index, int selectedChoice = -1);
@@ -81,7 +79,6 @@ private:
 	int MapChoice(int n) const;
 
 
-private:
 	// Text to be displayed is broken up into chunks (paragraphs). Paragraphs
 	// may also include "scene" images.
 	class Paragraph {
@@ -97,7 +94,6 @@ private:
 		// next paragraph below this one should be drawn at.
 		Point Draw(Point point, const Color &color) const;
 
-	private:
 		const Sprite *scene = nullptr;
 		WrappedText wrap;
 		// Special case: if this is the very first paragraph and it begins with
@@ -106,7 +102,6 @@ private:
 	};
 
 
-private:
 	// Reference to the player, to apply any changes to them.
 	PlayerInfo &player;
 

@@ -42,12 +42,10 @@ public:
 	void SetFrameRate(int fps);
 
 
-private:
 	// Calculate when the next frame should begin.
 	void Step();
 
 
-private:
 	std::chrono::steady_clock::time_point next;
 	std::chrono::steady_clock::duration step;
 	std::chrono::steady_clock::duration maxLag;

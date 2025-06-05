@@ -67,7 +67,6 @@ public:
 	bool Read(const ImageFileData &data, int frame = 0);
 
 
-private:
 	int width;
 	int height;
 	int frames;

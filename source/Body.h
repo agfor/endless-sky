@@ -86,7 +86,6 @@ public:
 	bool IsVisible(const Point &drawCenter) const;
 
 
-protected:
 	// Adjust the frame rate.
 	void SetFrameRate(float framesPerSecond);
 	void AddFrameRate(float framesPerSecond);
@@ -100,7 +99,6 @@ protected:
 	void Turn(const Angle &amount);
 
 
-protected:
 	// Basic positional attributes.
 	Point position;
 	Point velocity;
@@ -121,13 +119,11 @@ protected:
 	const Government *government = nullptr;
 
 
-private:
 	// Set what animation step we're on. This affects future calls to GetMask()
 	// and GetFrame().
 	void SetStep(int step) const;
 
 
-private:
 	// Animation parameters.
 	const Sprite *sprite = nullptr;
 	// Allow objects based on this one to adjust their frame rate and swizzle.

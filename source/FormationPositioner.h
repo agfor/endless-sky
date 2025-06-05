@@ -42,7 +42,6 @@ public:
 	Point Position(const Ship *ship);
 
 
-private:
 	// Re-generate the list of (relative) positions for the ships in the formation.
 	void CalculatePositions();
 
@@ -58,7 +57,6 @@ private:
 	void Remove(unsigned int index);
 
 
-private:
 	// Lists of ships on the rings. Used when (re)generating positions for the ring.
 	// The actual positions are stored in shipPositions.
 	std::vector<std::weak_ptr<const Ship>> shipsInFormation;

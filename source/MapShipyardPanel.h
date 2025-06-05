@@ -37,7 +37,6 @@ public:
 	explicit MapShipyardPanel(const MapPanel &panel, bool onlyHere = false);
 
 
-protected:
 	virtual const Sprite *SelectedSprite() const override;
 	virtual const Sprite *CompareSprite() const override;
 	virtual const Swizzle *SelectedSpriteSwizzle() const override;
@@ -54,11 +53,9 @@ protected:
 	virtual void DrawItems() override;
 
 
-private:
 	void Init();
 
 
-private:
 	std::map<std::string, std::vector<const Ship *>> catalog;
 	std::vector<const Ship *> list;
 	std::map<const System *, std::map<const Ship *, int>> parkedShips;

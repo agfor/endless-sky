@@ -77,12 +77,10 @@ public:
 	static Point GetMouse();
 
 
-private:
 	// If a push or pop is queued, apply it.
 	void PushOrPop();
 
 
-private:
 	// Whether the player has taken actions that enable us to save the game.
 	bool canSave = false;
 	// Whether the player has requested the game to shut down.

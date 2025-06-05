@@ -51,7 +51,6 @@ public:
 	double FleetMultiplier() const;
 
 
-private:
 	bool universalRamscoop = true;
 	int personSpawnPeriod = 36000;
 	int noPersonSpawnWeight = 1000;

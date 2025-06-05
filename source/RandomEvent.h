@@ -35,7 +35,6 @@ public:
 	bool CanTrigger() const;
 
 
-private:
 	const T *event;
 	int period;
 	ConditionSet conditions;

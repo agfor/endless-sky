@@ -102,7 +102,6 @@ public:
 	void BreakTargeting(const Government *gov);
 
 
-private:
 	class Outline {
 	public:
 		Outline(const Sprite *sprite, const Point &position, const Point &unit,
@@ -175,7 +174,6 @@ private:
 	};
 
 
-private:
 	void EnterSystem();
 
 	void CalculateStep();
@@ -210,7 +208,6 @@ private:
 		Status::Type type, double cloak);
 
 
-private:
 	PlayerInfo &player;
 
 	std::list<std::shared_ptr<Ship>> ships;

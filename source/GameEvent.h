@@ -76,7 +76,6 @@ public:
 	// Comparison operator, based on the date of the event.
 	bool operator<(const GameEvent &other) const;
 
-private:
 	Date date;
 	std::string name;
 	bool isDisabled = false;

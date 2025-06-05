@@ -49,7 +49,6 @@ public:
 	Animate &operator-=(const T &v);
 
 
-private:
 	int steps = 0;
 	T current{};
 	T target{};

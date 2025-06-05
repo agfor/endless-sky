@@ -44,7 +44,6 @@ public:
 	bool operator!=(const ExclusiveItem &other) const { return !(this->operator*() == other.operator*()); }
 
 
-private:
 	const Type *stockItem = nullptr;
 	Type item;
 };

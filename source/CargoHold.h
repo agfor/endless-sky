@@ -116,7 +116,6 @@ public:
 	int IllegalCargoAmount() const;
 
 
-private:
 	// Use -1 to indicate unlimited capacity.
 	int size = -1;
 	int bunks = -1;

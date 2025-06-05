@@ -47,11 +47,9 @@ public:
 	std::string Get() const;
 
 
-private:
 	bool ReferencesPhrase(const Phrase *phrase) const;
 
 
-private:
 	// A Choice represents one entry in a Phrase definition's "word" or "phrase" child
 	// node. If from a "word" node, a Choice may be pure text or contain embedded phrase
 	// references, e.g. `"I'm ${pirate} and I like '${band}' concerts."`.
@@ -91,7 +89,6 @@ private:
 	};
 
 
-private:
 	std::string name;
 	// Each time this phrase is defined, a new sentence is created.
 	std::vector<Sentence> sentences;

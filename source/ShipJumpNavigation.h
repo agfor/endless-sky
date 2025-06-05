@@ -62,7 +62,6 @@ public:
 	bool HasJumpDrive() const;
 
 
-private:
 	// Parse the given outfit to determine if it has the capability to jump, and update any
 	// jump information accordingly.
 	void ParseOutfit(const Outfit &outfit);
@@ -71,7 +70,6 @@ private:
 	void UpdateJumpDriveCosts(double distance, double cost);
 
 
-private:
 	// Cached information about the ship. Checked against the ship's current
 	// information during recalibration.
 	double mass = 0.;

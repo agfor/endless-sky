@@ -48,12 +48,10 @@ public:
 	const std::vector<int16_t> &NextChunk();
 
 
-private:
 	// This is the entry point for the decoding thread.
 	void Decode();
 
 
-private:
 	// Buffers for storing the decoded audio sample. The "silence" buffer holds
 	// a block of silence to be returned if nothing was read from the file.
 	std::vector<int16_t> silence;

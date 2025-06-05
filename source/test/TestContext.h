@@ -29,7 +29,6 @@ public:
 	const Test *CurrentTest() const noexcept;
 
 
-private:
 	// Class to describe a running test and running test-step within the test.
 	class ActiveTestStep {
 	public:
@@ -43,7 +42,6 @@ private:
 		bool operator<(const ActiveTestStep &rhs) const;
 	};
 
-private:
 	// Reference to the currently running test and test-step within the test.
 	std::vector<ActiveTestStep> callstack;
 

@@ -44,7 +44,6 @@ public:
 	const std::vector<Mask> &GetMasks(const Sprite *sprite, Point scale) const;
 
 
-private:
 	// Comparison helper to make spriteMask valid, *not* a total comparison function.
 	struct Cmp {
 		bool operator()(const Point &a, const Point &b) const noexcept;

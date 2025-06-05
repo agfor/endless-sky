@@ -59,7 +59,6 @@ public:
 	uint32_t SwizzleMask() const;
 	uint32_t SwizzleMask(bool isHighDPI) const;
 
-private:
 	std::string name;
 
 	uint32_t texture[2] = {0, 0};

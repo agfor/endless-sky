@@ -45,11 +45,9 @@ public:
 	std::list<DataNode>::const_iterator end() const;
 
 
-private:
 	void LoadData(const std::string &data);
 
 
-private:
 	// This is the container for all DataNodes in this file.
 	DataNode root;
 };

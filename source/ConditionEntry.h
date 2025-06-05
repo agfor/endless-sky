@@ -71,7 +71,6 @@ public:
 	void NotifyUpdate(uint64_t value);
 
 
-private:
 	std::string name; ///< Name of this entry, set during construction of the entry object.
 	int64_t value = 0; ///< Value of this condition, in case of direct access.
 

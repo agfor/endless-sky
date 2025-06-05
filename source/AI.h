@@ -89,7 +89,6 @@ template <class Type>
 	static const StellarObject *FindLandingLocation(const Ship &ship, const bool refuel = true);
 
 
-private:
 	// Check if a ship can pursue its target (i.e. beyond the "fence").
 	bool CanPursue(const Ship &ship, const Ship &target) const;
 	// Disabled or stranded ships coordinate with other ships to get assistance.
@@ -181,7 +180,6 @@ private:
 	void CacheShipLists();
 
 
-private:
 	class Orders {
 	public:
 		static const int HOLD_POSITION = 0x000;
@@ -211,13 +209,11 @@ private:
 	};
 
 
-private:
 	void IssueOrders(const Orders &newOrders, const std::string &description);
 	// Convert order types based on fulfillment status.
 	void UpdateOrders(const Ship &ship);
 
 
-private:
 	// TODO: Figure out a way to remove the player dependency.
 	const PlayerInfo &player;
 	// Data from the game engine.

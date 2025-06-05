@@ -102,14 +102,12 @@ public:
 	bool IsUnlocked() const;
 
 
-private:
 	// Helper functions for loading StartInfo.
 	void LoadState(const DataNode &node, StartState state);
 	bool LoadStateChild(const DataNode &child, StartInfo &info, bool &clearDescription, bool isAdd);
 	void FillState(StartState fillState, const Sprite *thumbnail);
 
 
-private:
 	// Conditions that will be set for any pilot that begins with this scenario.
 	ConditionAssignments conditions;
 	// Ships that a new pilot begins with (rather than being required to purchase one).

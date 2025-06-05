@@ -81,7 +81,6 @@ public:
 	static std::string Quote(const std::string &text);
 
 
-private:
 	// Save path (in UTF-8). Empty string for in-memory DataWriter.
 	std::filesystem::path path;
 	// Current indentation level.

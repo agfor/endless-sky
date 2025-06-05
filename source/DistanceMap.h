@@ -61,7 +61,6 @@ public:
 	std::set<const System *> Systems() const;
 
 
-private:
 	// To use DistanceMap with a destination, you must use RoutePlan as a wrapper,
 	// which uses these private constructors. The pathfinding will stop once it
 	// finds the best path to the destination. If a player is given, the path will
@@ -88,7 +87,6 @@ private:
 	bool CheckLink(const System &from, const System &to, bool linked, bool useJump, double &fuelCost) const;
 
 
-private:
 	// Final route, each Edge pointing to the previous step along the route.
 	std::map<const System *, RouteEdge> route;
 

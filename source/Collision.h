@@ -38,7 +38,6 @@ public:
 	bool operator<(const Collision &rhs) const;
 
 
-private:
 	Body *hit = nullptr;
 	CollisionType collisionType = CollisionType::NONE;
 	double range;

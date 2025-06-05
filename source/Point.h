@@ -85,13 +85,11 @@ public:
 	friend Point max(const Point &p, const Point &q);
 
 
-private:
 #ifdef __SSE2__
 	// Private constructor, using a vector.
 	explicit Point(const __m128d &v);
 
 
-private:
 	struct PointInternal {
 		double x;
 		double y;

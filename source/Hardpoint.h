@@ -122,7 +122,6 @@ public:
 	const BaseAttributes &GetBaseAttributes() const;
 
 
-private:
 	// Check whether a projectile or flotsam is within the range of the anti-missile
 	// or tractor beam system and create visuals if it is.
 	bool FireSpecialSystem(Ship &ship, const Body &body, std::vector<Visual> &visuals);
@@ -133,7 +132,6 @@ private:
 	void UpdateArc();
 
 
-private:
 	// The weapon installed in this hardpoint.
 	const Outfit *outfit = nullptr;
 	// Hardpoint location, in world coordinates relative to the ship's center.

@@ -64,12 +64,10 @@ public:
 	bool ShouldBeRemoved() const;
 
 
-private:
 	// What the hazard's damage is multiplied by given the current weather strength.
 	double DamageMultiplier() const;
 
 
-private:
 	const Hazard *hazard = nullptr;
 	int totalLifetime = 0;
 	int lifetimeRemaining = 0;

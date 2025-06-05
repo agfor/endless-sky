@@ -50,13 +50,11 @@ public:
 	void ClearHover();
 
 
-protected:
 	void UpdateDescription(const std::string &text, const std::vector<std::string> &licenses, bool isShip);
 	Point Draw(Point point, const std::vector<std::string> &labels, const std::vector<std::string> &values) const;
 	void CheckHover(const Table &table, const std::string &label) const;
 
 
-protected:
 	static const int WIDTH = 250;
 
 	WrappedText description;

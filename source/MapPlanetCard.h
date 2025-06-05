@@ -65,14 +65,12 @@ public:
 	static void ResetSize();
 
 
-protected:
 	// Highlight this card; this is to be called when it is selected.
 	void Highlight(double availableSpace) const;
 	double AvailableBottomSpace() const;
 	double AvailableTopSpace() const;
 
 
-private:
 	const Planet *planet;
 	const MapDetailPanel *parent;
 

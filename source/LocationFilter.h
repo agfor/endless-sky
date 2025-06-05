@@ -67,7 +67,6 @@ public:
 	const Planet *PickPlanet(const System *origin, bool hasClearance = false, bool requireSpaceport = true) const;
 
 
-private:
 	// Load one particular line of conditions.
 	void LoadChild(const DataNode &child);
 	// Check if the filter matches the given system. If it did not, return true
@@ -76,7 +75,6 @@ private:
 	bool Matches(const System *system, const System *origin, bool didPlanet) const;
 
 
-private:
 	bool isEmpty = true;
 
 	// The planet must satisfy these conditions:

@@ -36,11 +36,9 @@ public:
 		void Deactivate();
 
 
-	protected:
 		RenderTargetGuard(RenderBuffer &b, int screenWidth, int screenHeight);
 
 
-	private:
 		RenderBuffer &buffer;
 		Screen::ScreenDimensionsGuard screenGuard;
 		friend class RenderBuffer;
@@ -75,11 +73,9 @@ public:
 	void SetFadePadding(float top, float bottom, float right = 0, float left = 0);
 
 
-protected:
 	void Deactivate();
 
 
-private:
 	Point size;
 	unsigned int texid = -1;
 	unsigned int framebuffer = -1;

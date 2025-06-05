@@ -62,7 +62,6 @@ public:
 	int64_t Value(const Outfit *outfit, int day, int count = 1) const;
 
 
-private:
 	// "Sell" an item, removing it from the given record and returning the base
 	// day for its depreciation.
 	int Sell(std::map<int, int> &record) const;
@@ -74,7 +73,6 @@ private:
 	double DefaultDepreciation() const;
 
 
-private:
 	// This depreciation record is either a planet's stock or a player's fleet.
 	// If it's the stock, it sells you the most depreciated item first, and once
 	// it runs out of depreciated items all the rest have full price. If it is

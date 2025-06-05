@@ -88,7 +88,6 @@ public:
 	bool HasNews() const;
 
 
-private:
 	// Whether this port was loaded from the Load function.
 	bool loaded = false;
 

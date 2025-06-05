@@ -44,7 +44,6 @@ public:
 	void Move();
 
 
-private:
 	Angle spin;
 	int lifetime = 0;
 };

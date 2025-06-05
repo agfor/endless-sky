@@ -41,11 +41,9 @@ public:
 		const bool operator<(const Category &other) const { return SortHelper(*this, other); }
 		const bool operator()(const Category &a, const Category &b) const { return SortHelper(a, b); }
 
-	private:
 		static const bool SortHelper(const Category &a, const Category &b);
 
 
-	private:
 		friend class CategoryList;
 		std::string name;
 		int precedence = 0;
@@ -71,7 +69,6 @@ public:
 	typename std::vector<Category>::const_iterator end() const noexcept { return list.end(); }
 
 
-private:
 	std::vector<Category> list;
 	int currentPrecedence = 0;
 };

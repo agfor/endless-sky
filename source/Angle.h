@@ -66,11 +66,9 @@ public:
 	bool IsInRange(const Angle &base, const Angle &limit) const;
 
 
-private:
 	explicit Angle(int32_t angle);
 
 
-private:
 	// The angle is stored as an integer value between 0 and 2^16 - 1. This is
 	// so that any angle can be mapped to a unit vector (a very common operation)
 	// with just a single array lookup. It also means that "wrapping" angles

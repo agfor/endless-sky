@@ -223,7 +223,6 @@ public:
 	const std::pair<double, double> &DropoffRanges() const;
 
 
-protected:
 	// Legacy support: allow turret outfits with no turn rate to specify a
 	// default turnrate.
 	void SetTurretTurn(double rate);
@@ -233,11 +232,9 @@ protected:
 	std::pair<const Outfit*, int> ammo;
 
 
-private:
 	double TotalDamage(int index) const;
 
 
-private:
 	// Sprites and sounds.
 	Body sprite;
 	Body hardpointSprite;

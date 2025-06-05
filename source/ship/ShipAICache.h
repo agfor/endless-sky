@@ -40,7 +40,6 @@ public:
 	bool NeedsAmmo() const;
 
 
-private:
 	double mass = 0.;
 
 	bool useArtilleryAI = false;

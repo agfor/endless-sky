@@ -46,7 +46,6 @@ public:
 	bool AllowsFastForward() const noexcept final;
 
 
-protected:
 	// Only override the ones you need; the default action is to return false.
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress) override;
 	virtual bool Click(int x, int y, int clicks) override;
@@ -56,7 +55,6 @@ protected:
 	virtual bool Scroll(double dx, double dy) override;
 
 
-private:
 	// Draw the two subsections of this panel.
 	void DrawPlayer(const Rectangle &bounds);
 	void DrawFleet(const Rectangle &bounds);
@@ -81,7 +79,6 @@ private:
 		InfoPanelState::ShipComparator *shipSort = nullptr;
 	};
 
-private:
 	PlayerInfo &player;
 
 	static const SortableColumn columns[];

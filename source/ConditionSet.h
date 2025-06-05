@@ -112,7 +112,6 @@ public:
 	std::set<std::string> RelevantConditions() const;
 
 
-private:
 	/// Parse a node completely into this expression; all tokens on the line and all children if there are any.
 	bool ParseNode(const DataNode &node);
 
@@ -160,7 +159,6 @@ private:
 	bool FailParse(const DataNode &node, const std::string &failText);
 
 
-private:
 	// A pointer to the ConditionsStore that this set is evaluating.
 	const ConditionsStore *conditions = nullptr;
 

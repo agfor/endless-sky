@@ -30,14 +30,12 @@ public:
 	virtual void Draw() override;
 
 
-protected:
 	// Event handlers.
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress) override;
 	virtual bool Drag(double dx, double dy) override;
 	virtual bool Scroll(double dx, double dy) override;
 
 
-private:
 	const std::deque<std::pair<std::string, Messages::Importance>> &messages;
 
 	const double width;

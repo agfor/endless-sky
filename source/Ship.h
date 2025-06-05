@@ -542,7 +542,6 @@ public:
 	bool Imitates(const Ship &other) const;
 
 
-private:
 	// Various steps of Ship::Move:
 
 	// Check if this ship has been in a different system from the player for so
@@ -592,7 +591,6 @@ private:
 	void Jettison(std::shared_ptr<Flotsam> toJettison);
 
 
-private:
 	// Protected member variables of the Body class:
 	// Point position;
 	// Point velocity;

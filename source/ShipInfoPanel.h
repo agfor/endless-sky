@@ -48,7 +48,6 @@ public:
 	virtual void Draw() override;
 
 
-protected:
 	// Only override the ones you need; the default action is to return false.
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress) override;
 	virtual bool Click(int x, int y, int clicks) override;
@@ -57,7 +56,6 @@ protected:
 	virtual bool Release(int x, int y) override;
 
 
-private:
 	// Handle a change to what ship is shown.
 	void UpdateInfo();
 	void ClearZones();
@@ -79,7 +77,6 @@ private:
 	void Disown();
 
 
-private:
 	PlayerInfo &player;
 	// This is the currently selected ship.
 	std::vector<std::shared_ptr<Ship>>::const_iterator shipIt;

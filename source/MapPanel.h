@@ -88,7 +88,6 @@ public:
 	bool AllowsFastForward() const noexcept final;
 
 
-protected:
 	// Only override the ones you need; the default action is to return false.
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress) override;
 	virtual bool Click(int x, int y, int clicks) override;
@@ -121,7 +120,6 @@ protected:
 		bool &isWormhole, bool &isMappable, Color *wormholeColor) const;
 
 
-protected:
 	PlayerInfo &player;
 
 	DistanceMap distance;
@@ -170,7 +168,6 @@ protected:
 	bool fromMission = false;
 
 
-private:
 	class Node {
 	public:
 		Node(const Point &position, const Color &color, const std::string &name,
@@ -197,7 +194,6 @@ private:
 	};
 
 
-private:
 	void DrawTravelPlan();
 	// Display the name of and distance to the selected system.
 	void DrawSelectedSystem();
@@ -214,7 +210,6 @@ private:
 		bool drawBack = true, bool bigger = false);
 
 
-private:
 	// This is the coloring mode currently used in the cache.
 	int cachedCommodity = -10;
 

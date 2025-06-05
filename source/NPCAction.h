@@ -54,7 +54,6 @@ public:
 		const System *origin, int jumps, int64_t payload) const;
 
 
-private:
 	std::string trigger;
 	bool triggered = false;
 

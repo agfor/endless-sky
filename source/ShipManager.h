@@ -46,12 +46,10 @@ public:
 	bool Giving() const;
 
 
-private:
 	// Get a list of ships that satisfies these conditions, to take them away later.
 	std::vector<std::shared_ptr<Ship>> SatisfyingShips(const PlayerInfo &player) const;
 
 
-private:
 	const Ship *model = nullptr;
 	std::string name;
 	std::string id;

@@ -62,7 +62,6 @@ public:
 	void ClearPlacement();
 
 
-private:
 	LocationFilter location;
 	int frequency = 100;
 

@@ -61,7 +61,6 @@ public:
 	static Color Multiply(float scalar, const Color &base);
 
 
-private:
 	// Store the color as a float vector for easy interfacing with OpenGL.
 	float color[4];
 

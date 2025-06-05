@@ -75,7 +75,6 @@ public:
 	GameAction Instantiate(std::map<std::string, std::string> &subs, int jumps, int payload) const;
 
 
-private:
 	struct Debt {
 		Debt(int64_t amount) : amount(amount) {}
 
@@ -85,7 +84,6 @@ private:
 	};
 
 
-private:
 	bool isEmpty = true;
 	std::string logText;
 	std::map<std::string, std::map<std::string, std::string>> specialLogText;

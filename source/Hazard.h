@@ -50,7 +50,6 @@ public:
 	const std::map<const Effect *, float> &EnvironmentalEffects() const;
 
 
-private:
 	std::string name;
 	int period = 1;
 	int minDuration = 1;

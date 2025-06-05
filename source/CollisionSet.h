@@ -63,7 +63,6 @@ public:
 	const std::vector<Body *> &All() const;
 
 
-private:
 	class Entry {
 	public:
 		Entry() = default;
@@ -76,7 +75,6 @@ private:
 	};
 
 
-private:
 	// The type of collisions this CollisionSet is responsible for.
 	CollisionType collisionType;
 

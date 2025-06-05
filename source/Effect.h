@@ -48,7 +48,6 @@ public:
 	void Load(const DataNode &node);
 
 
-private:
 	std::string name;
 
 	const Sound *sound = nullptr;

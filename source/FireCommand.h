@@ -48,11 +48,9 @@ public:
 	void SetAim(int index, double amount) noexcept;
 
 
-private:
 	bool IsIndexValid(int index) const noexcept;
 
 
-private:
 	// The weapon commands stores whether the given weapon is active.
 	Bitset weapon;
 	// Turret turn rates, reduced to 8 bits to save space.

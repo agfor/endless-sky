@@ -51,13 +51,11 @@ public:
 	void DrawRequirements(const Point &topLeft) const;
 
 
-private:
 	void UpdateRequirements(const Outfit &outfit, const PlayerInfo &player, bool canSell, bool descriptionCollapsed);
 	void AddRequirementAttribute(std::string label, double value);
 	void UpdateAttributes(const Outfit &outfit);
 
 
-private:
 	std::vector<std::string> requirementLabels;
 	std::vector<std::string> requirementValues;
 	int requirementsHeight = 0;

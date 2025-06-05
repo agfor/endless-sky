@@ -95,17 +95,14 @@ public:
 	void DrawMenuBackground(Panel *panel) const;
 
 
-private:
 	void LoadFile(const std::filesystem::path &path, const PlayerInfo &player,
 		const ConditionsStore *globalConditions, bool debugMode = false);
 
 
-private:
 	// A value in [0, 1] representing how many source files have been processed for content.
 	std::atomic<double> progress;
 
 
-private:
 	Set<Color> colors;
 	Set<Swizzle> swizzles;
 	Set<Conversation> conversations;

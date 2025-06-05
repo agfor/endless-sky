@@ -79,7 +79,6 @@ public:
 	int64_t Payment() const noexcept;
 
 
-private:
 	class MissionDialog {
 	public:
 		MissionDialog(const ExclusiveItem<Phrase> &);
@@ -93,11 +92,9 @@ private:
 	};
 
 
-private:
 	std::string CollapseDialog(const std::map<std::string, std::string> *subs) const;
 
 
-private:
 	// Whether this action can be triggered after the mission has failed.
 	bool runsWhenFailed = false;
 

@@ -39,7 +39,6 @@ public:
 	virtual void Draw() override;
 
 
-protected:
 	// Only override the ones you need; the default action is to return false.
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress) override;
 	virtual bool Click(int x, int y, int clicks) override;
@@ -48,7 +47,6 @@ protected:
 	virtual bool Scroll(double dx, double dy) override;
 
 
-private:
 	// Use availableIt/acceptedIt to set MapPanel::selectedSystem, call DoScroll/CenterOnSystem.
 	// CenterOnSystem will either pan to the system or immediately jump to it.
 	void SetSelectedScrollAndCenter(bool immediate = false);
@@ -80,7 +78,6 @@ private:
 	// Centers on the next involved system for the clicked mission from the mission list
 	void CycleInvolvedSystems(const Mission &mission);
 
-private:
 	const std::list<Mission> &available;
 	const std::list<Mission> &accepted;
 	int cycleInvolvedIndex = 0;

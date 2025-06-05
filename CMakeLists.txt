@@ -261,11 +261,18 @@ target_link_libraries(EndlessSky PRIVATE ExternalLibraries EndlessSkyLib $<TARGE
 
 # Add shared library target
 add_library(EndlessSkyShared SHARED)
+# need PIC for shared library
+# ideally add this to the static lib so don't need to compile twice
+# but I can't get the address sanitization to work with cppyy
+# and don't want to change that in the static lib, so not doing that
 target_compile_options(EndlessSkyShared PRIVATE -fPIC)
 target_link_libraries(EndlessSkyShared PRIVATE ExternalLibraries)
 
 # Copy all source files from EndlessSkyLib to EndlessSkyShared
 get_target_property(SOURCES EndlessSkyLib SOURCES)
+# it's in the source/CMakeLists.txt so we need to prefix the paths
+# ideally we'd define this in that file too so wouldn't need to do this
+# but then it wasn't building even when I tried to do it explicitly at the command line
 foreach(SOURCE ${SOURCES})
     target_sources(EndlessSkyShared PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/source/${SOURCE})
 endforeach()

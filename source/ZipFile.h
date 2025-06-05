@@ -50,7 +50,6 @@ public:
 	std::string ReadFile(const std::filesystem::path &filePath) const;
 
 
-private:
 	/// Translates a global filesystem path to a relative path within the zip file.
 	/// @param path The complete file path, including the zip's path.
 	std::filesystem::path GetPathInZip(const std::filesystem::path &path) const;
@@ -59,7 +58,6 @@ private:
 	std::filesystem::path GetGlobalPath(const std::filesystem::path &path) const;
 
 
-private:
 	/// The zip handle
 	unzFile zipFile = nullptr;
 	/// The path of the zip file in the filesystem

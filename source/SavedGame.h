@@ -49,7 +49,6 @@ public:
 	const std::string &ShipName() const;
 
 
-private:
 	std::filesystem::path path;
 
 	std::string name;

@@ -46,17 +46,14 @@ public:
 	virtual void Draw() override;
 
 
-protected:
 	// Only override the ones you need; the default action is to return false.
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress) override;
 
 
-private:
 	void SetBribe(double scale);
 	void SetMessage(const std::string &text);
 
 
-private:
 	PlayerInfo &player;
 	std::shared_ptr<Ship> ship = nullptr;
 	std::function<void(const Government *)> bribeCallback = nullptr;

@@ -68,7 +68,6 @@ public:
 	bool Overlaps(const Point &center, double radius) const;
 
 
-private:
 	Point center;
 	Point dimensions;
 };

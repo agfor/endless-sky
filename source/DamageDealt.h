@@ -58,7 +58,6 @@ public:
 	const Point &HitForce() const noexcept;
 
 
-private:
 	// Friend of DamageProfile so that it can easily set all the damage
 	// values.
 	friend class DamageProfile;

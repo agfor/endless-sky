@@ -186,7 +186,6 @@ public:
 	static void DrawMenuBackground(Panel *panel);
 
 
-private:
 	static void LoadSources(TaskQueue &queue);
 	static std::map<std::string, std::shared_ptr<ImageSet>> FindImages();
 };

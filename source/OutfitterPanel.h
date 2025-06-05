@@ -45,7 +45,6 @@ public:
 	virtual void Step() override;
 
 
-protected:
 	virtual int TileSize() const override;
 	virtual int VisibilityCheckboxesSize() const override;
 	virtual bool HasItem(const std::string &name) const override;
@@ -66,7 +65,6 @@ protected:
 	virtual int FindItem(const std::string &text) const override;
 
 
-private:
 	static bool ShipCanBuy(const Ship *ship, const Outfit *outfit);
 	static bool ShipCanSell(const Ship *ship, const Outfit *outfit);
 	static void DrawOutfit(const Outfit &outfit, const Point &center, bool isSelected, bool isOwned);
@@ -79,7 +77,6 @@ private:
 	// same quantity of the selected outfit.
 	const std::vector<Ship *> GetShipsToOutfit(bool isBuy = false) const;
 
-private:
 	// Record whether we've checked if the player needs ammo refilled.
 	bool checkedRefill = false;
 	// Allow toggling whether outfits that are for sale are shown.

@@ -36,7 +36,6 @@ public:
 	explicit MapOutfitterPanel(const MapPanel &panel, bool onlyHere = false);
 
 
-protected:
 	virtual const Sprite *SelectedSprite() const override;
 	virtual const Sprite *CompareSprite() const override;
 	virtual const ItemInfoDisplay &SelectedInfo() const override;
@@ -51,11 +50,9 @@ protected:
 	virtual void DrawItems() override;
 
 
-private:
 	void Init();
 
 
-private:
 	// Maps category names to list of outfits in that category, sorted
 	// alphabetically by name.
 	std::map<std::string, std::vector<const Outfit *>> catalog;

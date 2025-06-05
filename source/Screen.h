@@ -35,7 +35,6 @@ public:
 		// Restore the screen settings.
 		void Deactivate();
 
-	private:
 		bool valid = false;
 		int oldWidth = 0;
 		int oldHeight = 0;

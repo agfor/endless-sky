@@ -79,7 +79,6 @@ public:
 	double Distance() const;
 
 
-private:
 	const Planet *planet;
 
 	double distance;

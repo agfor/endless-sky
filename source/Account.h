@@ -72,11 +72,9 @@ public:
 	int64_t TotalDebt(const std::string &type = "") const;
 
 
-private:
 	int64_t YearlyRevenue() const;
 
 
-private:
 	int64_t credits = 0;
 	// Regular income from salaries paid to the player.
 	std::map<std::string, int64_t> salariesIncome;

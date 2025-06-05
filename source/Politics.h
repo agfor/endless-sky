@@ -68,7 +68,6 @@ public:
 	void ResetDaily();
 
 
-private:
 	// attitude[target][other] stores how much an action toward the given target
 	// government will affect your reputation with the given other government.
 	// The relationships need not be perfectly symmetrical. For example, just

@@ -36,7 +36,6 @@ public:
 	void Draw() const;
 
 
-private:
 	void UpdateData(const std::vector<PlanetLabel> &labels, const System &system);
 	// Overlap detection.
 	void SetBoundingBox(const Point &labelDimensions, double angle);
@@ -45,7 +44,6 @@ private:
 		const StellarObject &object, double zoom) const;
 
 
-private:
 	const StellarObject *object;
 
 	Point drawCenter;

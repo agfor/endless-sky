@@ -41,11 +41,9 @@ public:
 	virtual void Draw() override;
 
 
-private:
 	const News *PickNews() const;
 
 
-private:
 	PlayerInfo &player;
 	std::shared_ptr<TextArea> description;
 	const Port &port;

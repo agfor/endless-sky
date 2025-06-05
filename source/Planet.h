@@ -165,7 +165,6 @@ public:
 	bool IsDefending() const;
 
 
-private:
 	bool isDefined = false;
 	std::string trueName;
 	std::string displayName;

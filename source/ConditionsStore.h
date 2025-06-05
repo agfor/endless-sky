@@ -71,7 +71,6 @@ public:
 	int64_t PrimariesSize() const;
 
 
-private:
 	// Retrieve a condition entry based on a condition name, the entry doesn't
 	// get created if it doesn't exist yet (the Set function will handle
 	// creation if required).
@@ -79,7 +78,6 @@ private:
 	const ConditionEntry *GetEntry(const std::string &name) const;
 
 
-private:
 	// Storage for both the primary conditions as well as the providers.
 	std::map<std::string, ConditionEntry> storage;
 };

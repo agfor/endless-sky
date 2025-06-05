@@ -42,7 +42,6 @@ public:
 	MinableDamageDealt CalculateDamage(const Minable &minable) const;
 
 
-private:
 	// Calculate the shared k and rSquared variables for
 	// any ship hit by a blast.
 	void CalculateBlast();
@@ -52,7 +51,6 @@ private:
 	void PopulateDamage(DamageDealt &damage, const Ship &ship) const;
 
 
-private:
 	// The weapon that the dealt damage.
 	const Weapon &weapon;
 	// The position of the projectile or hazard.

@@ -147,7 +147,6 @@ public:
 	bool IsRestrictedFrom(const Planet &planet) const;
 
 
-private:
 	unsigned id;
 	std::string name;
 	std::string displayName;

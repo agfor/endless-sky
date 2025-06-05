@@ -39,7 +39,6 @@ public:
 	virtual void Step() override;
 
 
-protected:
 	virtual int TileSize() const override;
 	virtual bool HasItem(const std::string &name) const override;
 	virtual void DrawItem(const std::string &name, const Point &point) override;
@@ -54,14 +53,12 @@ protected:
 	virtual int FindItem(const std::string &text) const override;
 
 
-private:
 	void BuyShip(const std::string &name);
 	void SellShipAndOutfits();
 	void SellShipChassis();
 	void SellShip(bool toStorage);
 
 
-private:
 	int modifier;
 
 	Sale<Ship> shipyard;

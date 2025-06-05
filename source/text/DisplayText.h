@@ -31,7 +31,6 @@ public:
 	const Layout &GetLayout() const noexcept;
 
 
-private:
 	Layout layout;
 	std::string text;
 };

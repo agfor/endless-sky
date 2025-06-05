@@ -50,7 +50,6 @@ public:
 	static double PlanetPanelHeight();
 
 
-protected:
 	// Navigates through the shown planets panel, and drags them around.
 	virtual bool Scroll(double dx, double dy) override;
 	virtual bool Drag(double dx, double dy) override;
@@ -63,7 +62,6 @@ protected:
 	virtual bool RClick(int x, int y) override;
 
 
-private:
 	void InitTextArea();
 	void GeneratePlanetCards(const System &system);
 	void DrawKey();
@@ -74,7 +72,6 @@ private:
 	void SetCommodity(int index);
 
 
-private:
 	int governmentY = 0;
 	int tradeY = 0;
 

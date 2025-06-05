@@ -33,7 +33,6 @@ public:
 	const Sprite *GetSprite() const;
 
 
-private:
 	Point position;
 	const Sprite *sprite = nullptr;
 };

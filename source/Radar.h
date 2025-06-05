@@ -58,7 +58,6 @@ public:
 	static const Color &GetColor(int type);
 
 
-private:
 	class Object {
 	public:
 		Object(const Color &color, const Point &pos, double out, double in);
@@ -86,7 +85,6 @@ private:
 		Point vector;
 	};
 
-private:
 	Point center;
 	std::vector<Object> objects;
 	std::vector<Pointer> pointers;

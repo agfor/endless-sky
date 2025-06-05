@@ -38,7 +38,6 @@ public:
 
 
 
-private:
 	const DataNode *GetContentsNode(const DataFile &sourceData) const;
 
 	// Writes out testdata as savegame file.
@@ -48,7 +47,6 @@ private:
 	bool InjectMission(const ConditionsStore *playerConditions) const;
 
 
-private:
 	// Name of the dataset
 	std::string dataSetName;
 	// Type of the dataset

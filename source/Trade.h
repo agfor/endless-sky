@@ -44,7 +44,6 @@ public:
 	const std::vector<Commodity> &SpecialCommodities() const;
 
 
-private:
 	std::vector<Commodity> commodities;
 	std::vector<Commodity> specialCommodities;
 };

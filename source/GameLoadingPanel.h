@@ -38,7 +38,6 @@ public:
 	void Draw() final;
 
 
-private:
 	PlayerInfo &player;
 	TaskQueue &queue;
 	const Conversation &conversation;

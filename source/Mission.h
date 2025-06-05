@@ -197,14 +197,12 @@ public:
 	Mission Instantiate(const PlayerInfo &player, const std::shared_ptr<Ship> &boardingShip = nullptr) const;
 
 
-private:
 	bool Enter(const System *system, PlayerInfo &player, UI *ui);
 	// For legacy code, contraband definitions can be placed in two different
 	// locations, so move that parsing out to a helper function.
 	bool ParseContraband(const DataNode &node);
 
 
-private:
 	std::string name;
 	std::string displayName;
 	std::string description;

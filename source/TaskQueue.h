@@ -69,7 +69,6 @@ public:
 	void Wait();
 
 
-private:
 	// Whether there are any outstanding async tasks left in this queue.
 	bool IsDone() const;
 
@@ -79,7 +78,6 @@ public:
 	static void ThreadLoop() noexcept;
 
 
-private:
 	std::list<std::shared_future<void>> futures;
 
 	// Tasks from this queue that need to be executed on the main thread.

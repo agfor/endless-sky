@@ -47,6 +47,5 @@ public:
 	}
 
 
-private:
 	const std::vector<T>& order;
 };

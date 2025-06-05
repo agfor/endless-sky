@@ -42,12 +42,10 @@ public:
 	void Draw(const Point &pos, const Point &vel, double zoom = 1., const System *system = nullptr) const;
 
 
-private:
 	void SetUpGraphics();
 	void MakeStars(int stars, int width);
 
 
-private:
 	int widthMod;
 	int tileCols;
 	std::vector<int> tileIndex;

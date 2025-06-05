@@ -49,7 +49,6 @@ public:
 	bool CanStock(const Planet *planet) const;
 
 
-private:
 	std::string name;
 	Sale<Item> stock;
 

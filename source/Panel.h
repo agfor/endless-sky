@@ -77,7 +77,6 @@ public:
 	virtual bool AllowsFastForward() const noexcept;
 
 
-protected:
 	// Only override the ones you need; the default action is to return false.
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress);
 	virtual bool Click(int x, int y, int clicks);
@@ -121,14 +120,12 @@ protected:
 	// Handle deferred add/remove child operations.
 	void AddOrRemove();
 
-private:
 	class Zone : public Rectangle {
 	public:
 		Zone(const Rectangle &rect, const std::function<void()> &fun) : Rectangle(rect), fun(fun) {}
 
 		void Click() const { fun(); }
 
-	private:
 		std::function<void()> fun;
 	};
 
@@ -152,7 +149,6 @@ private:
 	bool EventVisit(bool(Panel::*f)(FARGS ...args), ARGS ...args);
 
 
-private:
 	UI *ui = nullptr;
 
 	bool isFullScreen = false;

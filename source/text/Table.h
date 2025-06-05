@@ -103,7 +103,6 @@ public:
 	Rectangle GetRowBounds() const;
 
 
-private:
 	// Starting position for drawing a column is:
 	// point + Point(offset + align * font.Width(text), 0.)
 	// So, "align" will either be 0, -.5, or -1.
@@ -116,11 +115,9 @@ private:
 	};
 
 
-private:
 	void Draw(const std::string &text, const Layout *special, const Color &color) const;
 
 
-private:
 	// The current draw position.
 	mutable Point point;
 	// The column being drawn.

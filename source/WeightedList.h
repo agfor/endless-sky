@@ -72,11 +72,9 @@ public:
 	iterator erase(iterator first, iterator last) noexcept;
 
 
-private:
 	void RecalculateWeight();
 
 
-private:
 	std::vector<Type> choices;
 	std::vector<std::size_t> weights;
 	std::size_t total = 0;

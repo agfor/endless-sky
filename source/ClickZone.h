@@ -36,7 +36,6 @@ public:
 	Type Value() const noexcept;
 
 
-private:
 	Type value;
 };
 

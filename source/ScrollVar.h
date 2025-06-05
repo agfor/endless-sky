@@ -57,7 +57,6 @@ public:
 	ScrollVar &operator=(const T &v);
 
 
-private:
 	// Makes sure the animation value stays in range.
 	void Clamp(int steps);
 

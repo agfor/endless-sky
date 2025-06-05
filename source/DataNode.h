@@ -79,12 +79,10 @@ public:
 	int PrintTrace(const std::string &message = "") const;
 
 
-private:
 	// Adjust the parent pointers when a copy is made of a DataNode.
 	void Reparent() noexcept;
 
 
-private:
 	// These are "child" nodes found on subsequent lines with deeper indentation.
 	std::list<DataNode> children;
 	// These are the tokens found in this particular line of the data file.

@@ -33,7 +33,6 @@ public:
 	double MaxAttraction() const;
 
 
-private:
 	const Fleet *fleet = nullptr;
 	double minAttraction;
 	double maxAttraction;

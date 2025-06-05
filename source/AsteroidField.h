@@ -70,7 +70,6 @@ public:
 	const std::list<std::shared_ptr<Minable>> &Minables() const;
 
 
-private:
 	// This class represents an asteroid that cannot be destroyed or even
 	// deflected from its trajectory, and that repeats every 4096 pixels.
 	class Asteroid : public Body {
@@ -80,13 +79,11 @@ private:
 		void Step();
 		void Draw(DrawList &draw, const Point &center, double zoom) const;
 
-	private:
 		Angle spin;
 		Point size;
 	};
 
 
-private:
 	std::vector<Asteroid> asteroids;
 	std::list<std::shared_ptr<Minable>> minables;
 

@@ -59,7 +59,6 @@ public:
 		int Count() const;
 		double Energy() const;
 
-	private:
 		std::string name;
 		const Minable *type = nullptr;
 		int count;
@@ -185,7 +184,6 @@ public:
 	const std::vector<RaidFleet> &RaidFleets() const;
 
 
-private:
 	void LoadObject(const DataNode &node, Set<Planet> &planets,
 		const ConditionsStore *playerConditions, int parent = -1);
 	void LoadObjectHelper(const DataNode &node, StellarObject &object, bool removing = false) const;
@@ -195,7 +193,6 @@ private:
 	void UpdateNeighbors(const Set<System> &systems, double distance);
 
 
-private:
 	class Price {
 	public:
 		void SetBase(int base);
@@ -208,7 +205,6 @@ private:
 	};
 
 
-private:
 	bool isDefined = false;
 	bool hasPosition = false;
 	std::string trueName;

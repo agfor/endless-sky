@@ -72,7 +72,6 @@ public:
 	void Add(const DataNode &node, const ConditionsStore *conditions);
 
 
-private:
 	// Class that supports a single assignment
 	class Assignment {
 	public:
@@ -86,7 +85,6 @@ private:
 	};
 
 
-private:
 	// A pointer to the ConditionsStore that this assignment is applied to.
 	const ConditionsStore *conditions;
 

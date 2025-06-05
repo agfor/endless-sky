@@ -45,7 +45,6 @@ public:
 	bool operator!=(const Variant &other) const;
 
 
-private:
 	int weight = 1;
 	std::vector<const Ship *> ships;
 };

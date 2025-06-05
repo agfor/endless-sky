@@ -52,7 +52,6 @@ public:
 	void UpdateWith(const Bitset &other);
 
 
-private:
 	static constexpr size_t BITS_PER_BLOCK = std::numeric_limits<uint64_t>::digits;
 
 	// Stores the bits of the bitset.
